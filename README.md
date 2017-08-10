@@ -11,9 +11,10 @@
     </tr>   
     <tr><td>0</td>
         <td>中国联通VPN接入系统</td>
-         <td>https://27.17.44.66</td>
+         <td><a href="https://27.17.44.66" title="中国联通VPN接入系统，外网加密接入（非专线），需“工号+密码+验证码+短信口令”登陆">https://27.17.44.66</a> 
+     </td>
          <td>SSL VPN</td>
-         <td>外网加密接入（非专线），需“工号+密码+验证码+短信口令”登陆</td>
+         <td>外网SSL加密接入（非专线）</td>
     </tr>  
 </table>
 
@@ -27,25 +28,25 @@
     </tr>  
      <tr><td>1</td>
         <td>3G电子化销售服务系统</td>
-         <td>http://esales.10010.com/</td>
-         <td>VPN</td>
+         <td><a href="http://esales.10010.com/" title="3G电子化销售服务系统">http://esales.10010.com/</a></td>
+         <td>Internet</td>
          <td>3G号卡：开户、资料变更、充值缴费……</td>
     </tr>   
      <tr><td>2</td>
         <td>中国联通cBSS支撑系统</td>
-         <td>https://cbss.10010.com/essframe</td>
-         <td>VPN</td>
+        <td><a href="https://cbss.10010.com/essframe" title="中国联通cBSS支撑系统">https://cbss.10010.com/essframe</a></td>
+         <td>Internet</td>
          <td>互联网接入</td>
     </tr> 
      <tr><td>3</td>
         <td>代理商支撑系统</td>
-         <td>http://130.71.248.145/hbdls</td>
+        <td><a href="http://130.71.248.145/hbdls" title="联通代理商支撑系统">http://130.71.248.145/hbdls</a></td>
          <td>SSL VPN</td>
          <td>VPN或专线接入</td>
     </tr> 
      <tr><td>4</td>
         <td>号线资源管理系统</td>
-         <td>http://10.19.100.201:7001</td>
+        <td><a href="http://10.19.100.201:7001" title="联通号线资源管理系统">http://10.19.100.201:7001</a></td>
          <td>SSL VPN</td>
          <td>VPN或专线接入</td>
     </tr> 
