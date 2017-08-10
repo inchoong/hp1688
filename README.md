@@ -2,7 +2,7 @@
 
 
 <B>①准备工作</B>
-( 参阅：中国联通 “<B><a href="http://www.10010.com/" target="_blank">10010网上营业厅</a> 
+
 | <a href="http://www.chinaunicom.com/" target="_blank">联通企业官网</a> 
 | <a href="http://zhaopin.chinaunicom.com/" target="_blank">联通招聘系统</a></B> ” )
 
@@ -22,9 +22,7 @@
 </table>
 
 <B>②营业销售服务中</B>
-( 参阅：中国联通 “<B><a href="http://www.10010.com/" target="_blank">10010网上营业厅</a> 
-| <a href="http://www.chinaunicom.com/" target="_blank">联通企业官网</a> 
-| <a href="http://zhaopin.chinaunicom.com/" target="_blank">联通招聘系统</a></B> ” )
+( 参阅：中国联通 “<B><a href="http://www.10010.com/" target="_blank">10010网上营业厅</a></B> ” )
 
 <table>
     <tr><td><B>序号</B></td>
