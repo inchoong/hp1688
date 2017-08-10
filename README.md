@@ -2,8 +2,6 @@
 
 
 <B>①准备工作</B>
-( 参阅：中国联通 “<B><a href="http://www.10010.com/" target="_blank">10010网上营业厅</a></B> ” )
-
 <table>
     <tr><td><B>序号</B></td>
         <td><B>网站名称</B></td>
@@ -20,8 +18,6 @@
 </table>
 
 <B>②营业销售服务中</B>
-( 参阅：中国联通 “<B><a href="http://www.10010.com/" target="_blank">10010网上营业厅</a></B> ” )
-
 <table>
     <tr><td><B>序号</B></td>
         <td><B>网站名称</B></td>
