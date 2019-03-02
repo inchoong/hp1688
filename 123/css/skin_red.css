@@ -1,0 +1,24 @@
+﻿/* green laonian */
+html{ background-color:#fffbfa; background-image:url(../images/bdbg_red.gif);}
+body{ background-image:url(../images/top_bg_red.jpg);}
+.top_w{ background-position:0 -241px; }
+.top b em .pop_d, .top b em .color_d, .form_login{ border-color:#dfbab9;}
+.top b em .pop_d li a:hover{ background:#ed4d48;}
+.fblue,.fblue a,a.fblue{ color:#dc110b;}
+.top_w,.top b em.pop a,.sch_bar ul li a:hover,.sch_bar ul li a.curr,.sch_box,.box h2,.box h5,.box h2 span,.box h5 span,.help h3,.help h3 span.tit_right{ background-image:url(../images/bg_red.gif);}
+.box_cnt{ border-color:#d7afaf;}
+.box_cnt_in{ border-color:#fff5f5;}
+.sort dl.bgline{ background:#fff7f7;}
+.sort dl dt a{ color:#dc110b;}
+.sort dl a:hover{ background:#ed4d48;}
+.help h3{ color:#fff;}
+.help ul li a{ color:#dc110b;}
+.head{ border-color:#e78582;}
+.nav li a{ background-image:url(../images/tool_red.gif)}
+#sug table,#sug2 table{ border-color:#d6adad;}
+.ml td{ background:#fff2f2;}
+.mo td{ background:#e77b7b}
+.help h3 span.tit_right a:hover{ color:#000;}
+.help ul li a:hover{ color:#000;}
+.sort .mzlist dl.lastmz{ border-color:#ead6d6;}
+.sort .mzlist{ border-color:#f3eeea;}

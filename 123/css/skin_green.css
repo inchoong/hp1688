@@ -1,0 +1,22 @@
+/* green laonian */
+html{ background-color:#fefffa; background-image:url(../images/bdbg_green.gif);}
+body{ background-image:url(../images/top_bg_green.jpg);}
+.top_w{ background-position:0 -241px; }
+.top b em .pop_d, .top b em .color_d, .form_login{ border-color:#c8db99;}
+.top b em .pop_d li a:hover{ background:#6abe17;}
+.fblue,.fblue a,a.fblue{ color:#0c7609;}
+.top_w,.top b em.pop a,.sch_bar ul li a:hover,.sch_bar ul li a.curr,.sch_box,.box h2,.box h5,.box h2 span,.box h5 span,.help h3,.help h3 span.tit_right{ background-image:url(../images/bg_green.gif);}
+.box_cnt{ border-color:#b1c36c;}
+.box_cnt_in{ border-color:#f7fce8;}
+.sort dl.bgline{ background:#f8fff0;}
+.sort dl dt a{ color:#2b7606;}
+.sort dl a:hover{ background:#93b649;}
+.help h3{ color:#fff;}
+.help ul li a{ color:#0c7609;}
+.head{ border-color:#8bb56f;}
+.nav li a{ background-image:url(../images/tool_green.gif)}
+#sug table,#sug2 table{ border-color:#b1bd9b;}
+.ml td{ background:#f7fff5;}
+.mo td{ background:#9cc14f}
+.sort .mzlist dl.lastmz{ border-color:#cfd8c0;}
+.sort .mzlist{ border-color:#eaf0f3;}

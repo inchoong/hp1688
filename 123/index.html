@@ -1,0 +1,509 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<base target="_blank" />
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>关爱导航 - 简单，便捷，让老爸老妈轻松上网！</title>
+<link href="css/laonian.css" rel="stylesheet" type="text/css" />
+<link href="css/wea_laonian.css" rel="stylesheet" type="text/css" />
+<link id="css" href="" rel="stylesheet" type="text/css" />
+<style type="text/css">      
+#hwr_div{position:absolute; display:none;}            
+.hwr_hidden{left:-10000px;top:0}            
+.hwr_visible{ right:-70px;top:38px}
+</style> 
+<script language="javascript">
+	function direct_baidu(id){
+		var bdfm = document.getElementById("bdfm");
+		var word = document.getElementById('inbox_search');
+	
+	
+		if (id == 7){
+			bdfm.action = "https://news.baidu.com/ns";
+			document.getElementById('tn').value = '';
+			document.getElementById('pt').value = '';
+			document.getElementById('ct').value = 'news';
+			document.getElementById('lm').value = '';
+			document.getElementById('kw').value = '';				
+			bdfm.submit();	
+			return false;
+		}
+		if (id == 1){
+			bdfm.action = "https://www.baidu.com/s";
+			document.getElementById('tn').value = 'baidulaonian';
+			document.getElementById('pt').value = '';
+			document.getElementById('ct').value = '';
+			document.getElementById('lm').value = '-1';
+			document.getElementById('kw').value = '';				
+			bdfm.submit();	
+			window.blur();
+			return false;			
+		}
+
+		if (id == 10){
+			bdfm.action = "https://tieba.baidu.com/?";
+			document.getElementById('tn').value = '';
+			document.getElementById('pt').value = '';
+			document.getElementById('ct').value = '';
+			document.getElementById('lm').value = '';
+			document.getElementById('kw').value = '';			
+			bdfm.submit();	
+			return false;			
+		}
+		if (id == 5){
+			if(word.value == ""){
+				bdfm.action = "https://zhidao.baidu.com/";
+				document.getElementById('tn').value = '';
+				document.getElementById('pt').value = '';
+				document.getElementById('ct').value = '';
+				document.getElementById('lm').value = '';
+				document.getElementById('kw').value = '';
+			}else{
+				bdfm.action = "https://zhidao.baidu.com/q";
+				document.getElementById('tn').value = 'ikaslist';
+				document.getElementById('pt').value = '9991com_ik';
+				document.getElementById('ct').value = '17';
+				document.getElementById('lm').value = '';
+				document.getElementById('kw').value = '';						
+			}
+
+			bdfm.submit();	
+			return false;			
+		}
+		if (id == 2){
+			bdfm.action = "https://mp3.baidu.com/m";
+			document.getElementById('tn').value = '';
+			document.getElementById('pt').value = '';
+			document.getElementById('ct').value = '134217728';
+			document.getElementById('lm').value = '-1';
+			document.getElementById('kw').value = '';			
+			bdfm.submit();
+			return false;				
+		}	
+		if (id == 3){
+			bdfm.action = "https://image.baidu.com/i";		
+			document.getElementById('tn').value = '';
+			document.getElementById('pt').value = '';
+			document.getElementById('ct').value = '201326592';
+			document.getElementById('lm').value = '-1';
+			document.getElementById('kw').value = '';							
+			bdfm.submit();
+			return false;				
+		}	
+		if (id == 4){
+			bdfm.action = "https://video.baidu.com/v";
+			document.getElementById('tn').value = '';
+			document.getElementById('pt').value = '';
+			document.getElementById('ct').value = '301989888';
+			document.getElementById('lm').value = '';
+			document.getElementById('kw').value = '';				
+			bdfm.submit();	
+			return false;			
+		}	
+		
+	}
+	
+	function checkbdfm(){
+		var bdfm = document.getElementById("bdfm");
+		bdfm.action = "https://www.baidu.com/s";
+		document.getElementById('tn').value = 'baidulaonian';
+		document.getElementById('pt').value = '';
+		document.getElementById('ct').value = '';
+		document.getElementById('lm').value = '-1';
+		document.getElementById('kw').value = '';	
+			
+		if(document.getElementById('inbox_search').value==''){
+			alert('请您输入搜索内容');
+			return false;
+		}
+		return true;
+	}
+</script>
+<script type="text/javascript"></script>
+<script src="js/laonian_top.js" type="text/javascript"></script>
+<!-- 
+<link href="css/skin_red.css" rel="stylesheet" type="text/css" />
+-->
+</head>
+
+<body id="body" onload="setCss();">
+
+<!-- top -->
+<div class="top_w">
+<div class="top">   
+   <b><em><a href="https://bbs.2345.com/forumdisplay.php?fid=1&tid=1" >网友交流</a></em><i>|</i>
+      <em id="skin" class="pop" onmouseover="set_display_block('skin_color');" onmouseout="set_display_none('skin_color');"><a href="javascript:;" id="ghpifu" target="_self">更换皮肤</a>
+         <ul id="skin_color" onmousemove="document.getElementById('ghpifu').className='ahov';" onmouseout="document.getElementById('ghpifu').className='';" class="color_d" style="display:none;">
+            <li><a href="javascript:;" onclick="change_css('');" class="c_blue" target="_self">蓝色</a></li>
+            <li><a href="javascript:;" class="c_green" onclick="change_css('css/skin_green.css');" target="_self">绿色</a></li>
+            <li><a href="javascript:;" class="c_yellow" onclick="change_css('css/skin_yellow.css');" target="_self">黄色</a></li>
+            <li><a href="javascript:;" class="c_red" onclick="change_css('css/skin_red.css');" target="_self">红色</a></li>
+         </ul>
+     </em>      
+      <i>|</i>
+      <em id="login_em" class="pop" ><a id="login_a" href="#" target="_self" style="z-index:99; position:relative;" onclick="set_display('login_email');">邮箱登录</a>
+         <div class="form_login" id="login_email" onmousemove="document.getElementById('login_a').className='ahov';" onmouseout="document.getElementById('login_a').className='';" style="display:none;">
+         	<form method="POST" id="form_email" onsubmit="return clickMail()" action="" >
+	            <font>账 号</font><input id="uName2" name="uName" class="inbox_lg" type="text" value="" /><br />
+	            <font>邮 箱</font>
+		            <select id="email" name="domainss" onchange="chkMail(this.value,this)">
+		            	<option id="option" value="" selected="selected">--请选择--</option>
+		            	<option id="option" value="163">@163.com 网易</option>
+		            	<option id="option" value="126">@126.com 网易</option>
+		            	<option id="option" value="sina">@sina.com 新浪</option>
+		            	<option id="option" value="sinacn">@sina.cn 新浪</option>
+		            	<option id="option" value="sohu">@sohu.com 搜狐</option>
+		            	<option id="option" value="yahoo">@yahoo.com.cn</option>
+		            	<option id="option" value="yahoocn">@yahoo.cn</option>
+		            	<option id="option" value="tom">@tom.com</option>
+		            	<option id="option" value="21cn">@21cn.com</option>
+		            	<option id="option" value="yeah">@yeah.net</option>
+		            	<option id="option" value="139">@139.com</option>
+		            	<option id="option" value="baidu">百度</option>
+		            	<option id="option" value="51">51.com</option>
+		            	<option id="option" value="xn">人人网</option>
+		            	<option id="option" value="sinaminiblog">新浪微博</option>
+		            	<option id="option" value="2345">2345账号</option>
+		            	<option id="option" class="blue" value="—以下在弹出页登录↓—">—以下在弹出页登录↓—</option>
+		            	<option id="option" value="qq" id="red_qq"  >@qq.com</option>
+		            	<option id="option" value="Gmail" id="red_Gmail">@gmail.com</option>
+		            	<option id="option" value="hotmail" id="red_hotmail">@hotmail.com</option>
+		            	<option id="option" value="qqkj" id="red_qqkj">QQ空间</option>
+		            	<option id="option" value="kaixin001" id="red_kaixin001">开心网</option>
+		            	<option id="option" value="webqq" id="red_webqq">webqq</option>
+		            	<option id="option" value="alipay" id="red_alipay">支付宝</option>
+		            	<option id="option" class="blue" value="moreEmail">更多邮箱&raquo;</option>
+		            </select><br />
+	            <font>密 码</font><input id="uPw2" name="uPw" class="form_pw" type="password" value="" /><input id="subm" class="butn_log" type="submit" value="登 录" />
+            </form>
+         </div>
+      </em><i>|</i>
+      <em class="pop" onmouseover="set_display_block('version-down');" onmouseout="set_display_none('version-down');"><a href="javascript:;" id="qhbanben" class="" target="_self">切换版本</a>
+         <ul class="pop_d" id="version-down" onmousemove="document.getElementById('qhbanben').className='ahov';" onmouseout="document.getElementById('qhbanben').className='';" style="display:none;">
+            <li><a href="https://www.2345.com" onclick="SetCookie('goLoc','bz',3600*24*180,'/','2345.com')">标准版</a></li>
+            <li><a href="https://gaoji.2345.com/" onclick="SetCookie('goLoc','gj',3600*24*180,'/','2345.com')" >高级版</a></li>
+            <li><a href="https://www.2345.com/j.html" onclick="SetCookie('goLoc','jj',3600*24*180,'/','2345.com')" >精简版</a></li>
+            <li><a href="https://www.2345.com/shaoer.html" >少儿版</a></li>
+            <li><a href="https://www.2345.com/indexz.html" >窄屏版</a></li>
+            <li><a href="https://m.2345.com/pages/" >手机版</a></li>
+         </ul>
+         <iframe style="display:none;" frameborder="0" class="ifra_lay"></iframe>
+      </em><i>|</i>
+      <em><a class="home" href="#" onclick="SetHome(this,'https://www.2345.com/laonian.htm');clickCount('homepage');return(false);">设为主页</a></em>
+  </b>
+   <!--<a href="https://www.2345.com/chunyun.htm?lnb">2345倾情奉献----春运购票导航</a>-->
+   <p>简单，便捷，让老爸老妈轻松上网！</p>
+</div>
+</div>
+
+<div class="wrap">
+<!--  head -->
+<div class="head">
+   <span class="logo"><a href="https://www.2345.com/laonian.htm" onclick="SetHome(this,'');" target="_self"><img src="images/logo_ln.gif" /></a></span>
+   <span  class="top_weather" id="top_weather" style="display: block;"><p>正在获取天气数据，请稍候…如天气无法打开，请按Ctrl+F5刷新！</p></span>   
+
+<div id="city_wea_set" class="top_weather_set" style="display:none;">
+<iframe scrolling="no" height="68" frameborder="0" width="100%" src="about:blank" name="city_set_ifr" id="city_set_ifr" allowtransparency="true"></iframe>
+
+</div><script type="text/javascript" id="weather" defer="defer"></script>
+
+<DIV class=top_time id=rili></DIV>
+   
+<span id="rili" class="top_time"><em>
+  <a href="rili.html?ln" ></a><br />
+  <a href="rili.html?ln" class="fblue underline" >万年历</a>&nbsp;&nbsp;&nbsp;
+  <a href="jrhl.html" class="fblue underline" >择吉黄历</a></em>
+  <b id="ClockTime">11:20</b></span>
+</div>
+
+<!-- search -->
+<FORM id="bdfm" name="f"onsubmit="return checkbdfm();" action="https://www.baidu.com/s" >
+
+<div class="search">
+   <span class="sch_logo"><a href="https://www.baidu.com" ><img src="images/baidu.gif" /></a></span>
+   <span class="sch_bar">
+      <ul>
+      	<li><a href="https://news.baidu.com/?" id="lt7" onclick="direct_baidu(7); return false;">新闻</a></li>
+      	<li><a href="#" class="curr" id="ss_active">网页</a></li>
+      	<li><a href="https://mp3.baidu.com/?" id="lt2" onclick="direct_baidu(2); return false;">音乐</a></li>
+      	<li><a href="https://image.baidu.com/?" id="lt3" onclick="direct_baidu(3); return false;">图片</a></li>
+      	<li><a href="https://video.baidu.com/?l" id="lt4" onclick="direct_baidu(4); return false;">视频</a></li>
+      	<li><a href="https://zhidao.baidu.com/?" id="lt5" onclick="direct_baidu(5); return false;">问答</a></li>
+      	<li><a href="https://tieba.baidu.com/?" id="lt10" onclick="direct_baidu(10); return false;">贴吧</a></li>
+      </ul>
+      <div class="sch_box"><div id="sug" style="display:none;"><table cellspacing="0" cellpadding="2" id="sug_t"><tbody><tr class="ml"><td>163</td></tr><tr class="ml"><td>163邮箱</td></tr><tr class="mo"><td>163邮箱登陆</td></tr><tr class="ml"><td>163.com</td></tr><tr class="ml"><td>163邮箱登陆首页</td></tr><tr class="ml"><td>16k</td></tr><tr class="ml"><td>1688</td></tr><tr class="ml"><td>16k小说网</td></tr><tr class="ml"><td>163.com 邮</td></tr><tr class="ml"><td>1616</td></tr><tr class="ml"><td style="text-align: right;"><a style="cursor: pointer; font-size: 14px;">打开历史记录</a></td></tr></tbody></table></div>
+        <input class="inbox_sch" id="inbox_search" name="word" type="text" value="输入您想找的内容" onclick="document.getElementById('inbox_search').value='';" onblur="if(this.value.length==0){this.style.background='#fff'}"  autocomplete="off"/>
+        <DIV class=hwr_hidden id=hwr_div onclick=stopClosePen(event)></DIV>
+    <input class="btn_sch" name="" type="submit" value="百度一下" /></div>
+    
+    <input type="hidden" id="tn" name="tn" value="baidulaonian" />
+ 	<input type="hidden" id="ct" name="ct" value="" />
+ 	<input type="hidden" id="lm" name="lm" value="-1" />
+ 	<input type="hidden" id="kw" name="kw" value="" />
+ 	<input type="hidden" id="pt" name="pt" value="" /> 
+ 	<div id="sug" style="z-index: 200; display:none;"></div>
+   </span>
+<!--   <div class="write"><a href="#" class=" fblue underline"><em></em>手写输入</a></div>-->
+</div>
+</FORM>
+<!-- search end -->
+
+<!-- nav -->
+<div class="nav box">
+   <h2><span></span></h2>
+   <div class="box_cnt">
+      <div class="box_cnt_in">
+         <ul><li><a class="t_wea" href="https://tianqi.2345.com/" >天气预报</a></li>
+             <li><a class="t_news" href="https://tools.2345.com/jsnew.html" >即时新闻</a></li>
+             <li><a class="t_read" href="https://www.abbao.cn/" >在线读报</a></li>
+             <li><a class="t_radio" href="https://www.2345.com/radio.htm??0" >收听广播</a></li>
+             <li><a class="t_dict noright" href="https://xh.5156edu.com/bs.html?" >新华字典</a></li>
+             <li><a class="t_tv" href="https://www.tvmao.com/?" >节目预告</a></li>
+             <li><a class="t_cook" href="https://tools.2345.com/meishi/" >家常菜谱</a></li>
+             <li><a class="t_stock" href="https://quote.stockstar.com/stock/?" >股票走势</a></li>
+             <li><a class="t_lottery" href="https://www.2345.com/caipiao.html" >彩票开奖</a></li>
+             <li><a class="t_life noright" href="https://www.2345.com/content-laonian.html" >生活服务</a></li>
+         </ul>
+      </div>
+   </div>
+   <h5><span></span></h5>
+</div>
+
+
+<!-- list -->
+<div class="sort box">
+   <h2><span></span></h2>
+   <div class=" box_cnt">
+      <div class="box_cnt_in">
+      <div class="mzlist"><dl>
+         <dd>
+          <a href="https://www.sina.com.cn/" >新&nbsp;&nbsp;浪</a>
+          <a href="https://www.sohu.com/" >搜&nbsp;&nbsp;狐</a>
+          <a href="https://www.baidu.com/" >百&nbsp;&nbsp;度</a>
+          <a href="https://www.ifeng.com/" >凤&nbsp;凰&nbsp;网</a>
+          <a href="https://www.cntv.cn/index.shtml" >CCTV新闻</a>
+          <a href="https://www.163.com/" >网&nbsp;&nbsp;易</a>
+          <a href="https://www.qq.com/" >腾&nbsp;&nbsp;讯</a>
+          </dd></dl>
+      <dl class="bgline">
+       <dd>
+        <a href="https://www.taobao.com/" >淘&nbsp;宝&nbsp;网</a>
+        <a href="https://www.youku.com/" >优&nbsp;酷&nbsp;网</a>
+        <a href="https://www.tudou.com/" >土&nbsp;豆&nbsp;网</a>
+        <a href="https://www.weibo.com/" >新浪微博</a>
+        <a href="https://www.kaixin001.com/" >开&nbsp;心&nbsp;网</a>
+        <a href="https://www.xinjunshi.com/">军事新闻</a>
+        <a href="https://www.tiexue.net/" >铁&nbsp;血&nbsp;网</a>
+        </dd></dl>
+        
+      <dl><dd>
+        <a href="https://www.xinhuanet.com/" >新&nbsp;华&nbsp;网</a>
+        <a href="https://www.people.com.cn/" >人&nbsp;民&nbsp;网</a>
+        <a href="https://www.gov.cn/" >政&nbsp;府&nbsp;网</a>
+        <a href="https://www.zaobao.com/" >联合早报</a>
+        <a href="https://www.infzm.com/" >南方周末</a>
+        <a href="https://www.wenweipo.com/" >香港文汇报</a>
+        <a href="https://www.un.org/chinese/News/" >联合国新闻</a>
+          </dd></dl>
+          
+      <dl class="bgline lastmz">
+          <dd>
+          <a href="https://www.chinanews.com/" >中国新闻网</a>
+          <a href="https://www.stnn.cc/" >星岛环球网</a>
+          <a href="https://www.mop.com/" >猫扑社区</a>
+          <a href="https://qzone.qq.com/" >QQ空间</a>
+          <a href="https://cn.msn.com/" >MSN中国</a>
+          <a href="https://www.ycwb.com/" >羊城晚报</a>
+          <a href="https://www.eastmoney.com/" >东方财富</a>
+          </dd></dl>
+</div>
+
+      <dl><dt><a href="https://www.2345.com/newsweek.html" >[新闻]</a></dt>
+          <dd><a href="https://news.sina.com.cn/" >新浪新闻</a>
+          <a href="https://news.ifeng.com/mil/" >凤凰新闻</a>
+          <a href="https://www.chinanews.com/" >中国新闻网</a>
+          <a href="https://military.china.com/" >中华网军事</a>
+          <a href="https://www.cankaoa.com/" >参考消息</a>
+          <a href="https://www.southcn.com/" >南&nbsp;方&nbsp;网</a>
+          <a class="more" href="https://www.2345.com/newsweek.htm?ln2" >更多&raquo;</a>
+      </dd></dl>
+      
+      <dl class="bgline"><dt><a href="https://www.2345.com/bbs.html" >[社区]</a></dt>
+          <dd><a href="https://tieba.baidu.com/f?kw=%D6%D0%B9%FA%C0%CF%C4%EA" >中国老年吧</a>
+          <a href="https://www.keai99.com/?" >可爱老人网</a>
+          <a href="https://www.china50plus.com/" >人过五十</a>
+          <a href="https://www.oldkids.cn/" >老&nbsp;小&nbsp;孩</a>
+          <a href="https://www.lnrzj.com/" >老年之家</a>
+          <a href="https://tieba.news.ifeng.com/zhiqing/" >凤凰知青</a>
+          <a  class="more" href="https://www.2345.com/bbs.htm?" >更多&raquo;</a>
+      </dd></dl>
+      
+      <dl><dt><a href="https://game.2345.com/" >[游戏]</a></dt>
+          <dd><a href="https://xiaoyouxi.2345.com/flash/27179.html" >中国象棋</a>
+          <a href="https://xiaoyouxi.2345.com/flash/48152.html" >连&nbsp;连&nbsp;看</a>
+          <a href="https://xiaoyouxi.2345.com/flash/11935.html" >打&nbsp;麻&nbsp;将</a>
+          <a href="https://xiaoyouxi.2345.com/flash/9341.html" >斗&nbsp;地&nbsp;主</a>
+          <a href="https://www.4399.com/flash_fl/7_1.htm?" >棋牌游戏</a>
+          <a href="https://xiaoyouxi.2345.com/flash/165.html" >五子连珠</a>
+          <a  class="more" href="https://game.2345.com/" >更多&raquo;</a></dd>
+      </dl>
+      
+      <dl class="bgline"><dt><a href="https://www.2345.com/love.html" >[交友]</a></dt>
+          <dd><a href="https://www.751314.com/751314/index.php" >中老年交友</a>
+          <a href="https://www.zhiji.com/" >知己同城</a>
+          <a href="https://www.i60.cn/" >金&nbsp;婚&nbsp;网</a>
+          <a href="https://www.wanxia.com/" >晚&nbsp;霞&nbsp;网</a>
+          <a href="https://www.xyh99.net/">夕&nbsp;阳&nbsp;红</a>
+          <a href="https://www.567jia.com/" >老年之家</a>
+          <a class="more" href="https://www.2345.com/love.html" >更多&raquo;</a></dd>
+      </dl>
+      
+      <dl><dt><a href="https://www.2345.com/health.html" >[健康]</a></dt>
+          <dd><a href="https://oldman.39.net/" >39老年健康</a>
+          <a href="https://cctv.cntv.cn/lm/jiankangzhilu/index.shtml" >健康之路</a>
+          <a href="https://www.xywy.com/?" >寻医问药</a>
+          <a href="https://tools.2345.com/pianfang/" >偏方大全</a>
+          <a href="https://www.laozhongyi.net/?" >老中医在线</a>
+          <a href="https://www.meishichina.com/Topic/CaiPu/YangShengZhou/" >粥谱大全</a>
+          <a class="more" href="https://www.2345.com/health.html" >更多&raquo;</a></dd>
+      </dl>
+      
+      <dl class="bgline"><dt><a href="https://www.2345.com/quyi.html" >[曲艺]</a></dt>
+          <dd><a href="https://box.zhangmen.baidu.com/m?rf=top-junlvminge&l_id=107&gate=10&ct=134217728&tn=baidumt&c_n=mp3order&l_n=%E6%B5%81%E9%87%91%E5%B2%81%E6%9C%88" >经典老歌</a>
+          <a href="https://www.1ting.com/singer/3209/song" >红歌荟萃</a>
+          <a href="https://www.2345.com/mingjia.html" >名家戏曲</a>
+          <a href="https://cctv.cntv.cn/lm/jiuzhoudaxitai/index.shtml" >九州大戏台</a>
+          <a href="https://www.chinaopera.net/" >中国戏曲网</a>
+          <a href="https://list.mp3.baidu.com/top/xiangshengquyi.html?fr=aladdin?" >相声大全</a>
+          <a class="more" href="https://www.2345.com/quyi.html" >更多&raquo;</a></dd>
+      </dl>
+      
+      <dl><dt><a href="https://tv.2345.com/shipin/" >[视频]</a></dt>
+          <dd><a href="https://tv.youku.com/" >优酷电视</a>
+          <a href="https://tv.2345.com/live/" >网上看电视</a>
+          <a href="https://v.2345.com/live/" >电视直播</a>
+          <a href="https://list.iqiyi.com/www/2/15-35-----------4-1-1-1---.html" >情感剧场</a>
+          <a href="https://tv.2345.com/kangri---.html" >抗日电视剧</a>
+          <a href="https://list.iqiyi.com/www/2/15-290-----------3-1-1-1---.html" >谍战剧专区</a>
+          <a class="more" href="https://tv.2345.com/shipin/" >更多&raquo;</a></dd>
+      </dl>
+      
+      <dl class="bgline"><dt><a href="https://www.2345.com/xingzuo.html" >[算命]</a></dt>
+          <dd><a href="https://tools.2345.com/zhgjm.html" >周公解梦</a>
+          <a href="https://bbs.64gua.com/" >周易天地</a>
+          <a href="https://www.fengshuijia.com/homefengshui/" >家居风水</a>
+          <a href="https://tools.2345.com/suanming.html" >免费算命</a>
+          <a href="https://sm.k366.com/bz/" >八字算命</a>
+          <a href="https://www.zdic.net/nongli/2011-12-7.html" >老&nbsp;黄&nbsp;历</a>
+          <a class="more" href="https://www.2345.com/xingzuo.html" >更多&raquo;</a></dd>
+      </dl>
+      
+      <dl><dt><a href="https://www.2345.com/flower.htm?" >[花鸟]</a></dt>
+          <dd><a href="https://www.china-flower.com/" >中国花卉网</a>
+          <a href="https://www.18023.com/?" >中国钓鱼网</a>
+          <a href="https://bbs.chinafishing.com/" >海峡钓鱼网</a>
+          <a href="https://www.cnpenjing.com/" >盆景艺术</a>
+          <a href="https://www.cnfish.com/" >观赏鱼之家</a>
+          <a href="https://www.tahua.net/portal.php" >踏&nbsp;花&nbsp;行</a>
+          <a class="more" href="https://www.2345.com/flower.htm?" >更多&raquo;</a></dd>
+      </dl>
+      
+      <dl class="bgline"><dt><a href="https://www.2345.com/art.html" >[书画]</a></dt>
+          <dd><a href="https://www.freehead.com/index.php" >中国书法网</a>
+          <a href="https://www.ltsf.com/index.html?" >书&nbsp;画&nbsp;网</a>
+          <a href="https://www.yingbishufa.com/" >硬笔书法</a>
+          <a href="https://sports.sina.com.cn/chess/" >新浪棋牌</a>
+          <a href="https://cctv.cntv.cn/lm/xunbao/index.shtml" >CCTV寻宝</a>
+          <a href="https://www.sssc.cn/" >盛世收藏</a>
+          <a class="more" href="https://www.2345.com/art.html" >更多&raquo;</a></dd>
+      </dl>
+      
+      <dl><dt><a href="https://www.2345.com/book.html" >[读书]</a></dt>
+          <dd><a href="https://book.ifeng.com/" >凤凰读书</a>
+          <a href="https://www.tingbook.com/" >天方听书</a>
+          <a href="https://www.qikan.com.cn/MastMagazineCategory/453.html" >在线期刊</a>
+          <a href="https://www.nlc.gov.cn/" >国家图书馆</a>
+          <a href="https://www.storychina.cn/" >故&nbsp;事&nbsp;会</a>
+          <a href="https://www.baidu.com/search/guoxue/dir/fenlei.html" >国&nbsp;&nbsp;学</a>
+          <a class="more" href="https://www.2345.com/book.html" >更多&raquo;</a></dd>
+      </dl>
+
+      <dl class="bgline"><dt><a href="https://www.2345.com/sheying.html" >[摄影]</a></dt>
+          <dd><a href="https://www.xitek.com/" >色影无忌</a>
+          <a href="https://academy.fengniao.com/" >摄影技巧</a>
+          <a href="https://www.cd-fiap.com/forum.php?mod=forumdisplay&fid=65" >摄影之家</a>
+          <a href="https://www.docph.com/" >纪实摄影</a>
+          <a href="https://tieba.baidu.com/f?kw=%D6%D0%C0%CF%C4%EA%C9%E3%D3%B0%B0%C9" >中老年摄影</a>
+          <a href="https://dc.pconline.com.cn/jiqiao/" >教你用相机</a>
+          <a class="more" href="https://www.2345.com/sheying.html" >更多&raquo;</a></dd>
+      </dl>
+      
+      <dl><dt><a href="https://lvyou.2345.com/" >[旅游]</a></dt>
+          <dd><a href="https://www.biketo.com/BBS/forum-69-1.html" >中老年车友</a>
+          <a href="https://www.yododo.com/event/" >结伴出游</a>
+          <a href="https://www.sozhen.com/default/default.html" >中国古镇网</a>
+          <a href="https://www.2345.com/travel_search.html" >旅游比价</a>
+          <a href="https://www.lvmama.com/ticket" >打折门票</a>
+          <a href="https://www.2345.com/tour.html" >旅游攻略</a>
+          <a class="more" href="https://lvyou.2345.com/" >更多&raquo;</a></dd>
+       </dl>
+
+      <dl class="bgline"><dt><a href="https://buy.2345.com/" >[购物]</a></dt>
+          <dd><a href="https://www.tmall.com/" >淘宝商城</a>
+          <a href="https://www.360buy.com/" >京东商城</a>
+          <a href="https://www.kongfz.com/" >孔夫子旧书</a>
+          <a href="https://temai.tmall.com/?TBG=146112.176505.18&spm=1.146112.176505.18" >品牌特卖</a>
+          <a href="https://buy.2345.com/activity/?from=top" >折扣促销</a>
+          <a href="https://tuan.2345.com/" >团购导航</a>
+          <a class="more" href="https://buy.2345.com/" >更多&raquo;</a></dd>
+      </dl>
+      
+      <!--<dl><dt><a href="https://www.2345.com/sheying.html" >[摄影]</a></dt>
+          <dd><a href="https://www.fengniao.com/" >蜂鸟网</a><a href="https://www.xitek.com/" >色影无忌</a><a href="https://www.cphoto.net/" >摄影在线</a><a href="https://digital.pconline.com.cn/photo/" >摄影部落</a><a href="https://dc.pconline.com.cn/jiqiao/" >教你用相机</a><a class="more" href="https://www.2345.com/sheying.html" >更多&raquo;</a></dd>          
+      </dl>-->
+      <dl><dt><a href="https://www.2345.com/?" >[导航]</a></dt>
+          <dd><a href="https://tools.2345.com/?l" >实用查询</a>
+          <a href="https://www.2345.com/ylln.htm?" >娱乐网站</a>
+          <a href="https://www.2345.com/shln.htm?" >生活网站</a>
+          <a href="https://city.2345.com/sh/" >地方网站</a>
+          <a href="https://www.2345.com/qtln.htm?" >其他网站</a>
+                    <a href="https://www.2345.com/world.html" >国外名站</a>
+          <a class="more" href="https://www.2345.com/?" >更多&raquo;</a></dd>          
+      </dl>
+      </div>
+   </div>
+   <h5><span></span></h5>
+</div>
+
+<div class="box help">
+   <h3><span class="tit_left">上网帮助
+   <font>让上网变得更简单</font></span>
+   <span class="tit_right">
+   <a href="https://bbs.2345.com/thread.php?fid=7&pid=173414"  class="underline">更多&raquo;</a>
+   </span></h3>
+   
+<div class=" box_cnt">
+<div class="box_cnt_in">
+<ul><li><a href="https://www.2345.com/xszn/xshelp.html" >2345新手指南</a></li>
+    <li><a href="https://bbs.2345.com/thread.php?fid=1&pid=75965" >老年上网帮助指南</a></li>
+    <li><a href="https://www.2345.com/help/movie.html" >如何在网上看电影</a></li>
+    <li><a href="https://bbs.2345.com/thread.php?fid=1&pid=77114&extra=page%253D1" >快捷键的使用</a></li>
+    <li><a href="https://bbs.2345.com/thread.php?fid=1&pid=78614&extra=page%253D1" >怎样使用电子邮箱</a></li>
+    <li><a href="https://www.2345.com/help/timehelp.html" >如何进行时间校对</a></li>
+    <li><a href="https://bbs.2345.com/thread.php?fid=1&pid=80884&extra=page%253D1" >手把手教你 玩转你的QQ</a></li>
+    <li><a href="https://bbs.2345.com/thread.php?fid=1&pid=78938&extra=page%253D1" >手机上网指南</a></li>
+        </ul></div></div>
+        
+   <h5><span></span></h5>
+</div>
+</div>
+<!-- foot -->
+<div class="foot"><a href="https://www.2345.com/" >返回2345</a> - <a href="javascript:;" onclick="add_fav();" target="_self">收藏老年版</a> - <a href="https://gaoji.2345.com" >高级版</a> - <a href="https://bbs.2345.com/fk/index.htm?cName=%u8001%u5E74" >意见反馈</a> - ICP证沪B2-20120099</div>
+<span id="sugjs" style="display: none;"><script src="css/laonian_sug1_n20101015.js" id="__sug__" type="text/javascript"></script></span>
+<script type="text/javascript" src="css/laonian.js"></script>
+<script type="text/javascript" src="css/funb_laonian.js?v=8.5.5"></script> 
+<script src="https://union2.50bang.org/js/inner"></script>
+<script src="css/clickCounttj_help.js"></script>
+<script id="clickCount"></script>
+</body>
+</html>

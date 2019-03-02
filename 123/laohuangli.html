@@ -1,0 +1,555 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="gb2312" />
+	<title>黄道吉日查询_每日吉凶查询-2345实用查询</title>
+	<meta content="吉日,黄道吉日,结婚吉日" name="Keywords" />
+	<meta content="2345吉日查询提供吉日，黄道吉日以及结婚吉日查询，2019查吉日就上2345吉日查询！" name="Description" />
+	<meta name="mobile-agent" content="format=html5;url=http://tools.2345.com/m/laohuangli.htm" />
+	<script type="text/javascript" src="//img1.2345.com/toolsimg/js/ua.js"></script>
+	<link href="//img1.2345.com/toolsimg/css/public_v2.css" rel="stylesheet" type="text/css" />
+	<link href="//img1.2345.com/toolsimg/css/base2013.css" rel="stylesheet" type="text/css" />
+	<link href="//img1.2345.com/toolsimg/css/jiri.css" rel="stylesheet" type="text/css" />
+	<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+</head>
+<body><script type="text/javascript" src="/js/global.js"></script>
+		<!-- <script>
+  /*实用查询子页面顶部悬浮搜索推荐 创建于 2015-06-17*/
+  var cpro_id = "u2161153";
+</script>
+<script src="http://su.bdimg.com/static/dspui//img1.2345.com/toolsimg/js/uf.js" type="text/javascript"></script> -->
+		<div class="wrapper">
+			<script type="text/javascript" src="//img1.2345.com/toolsimg/js/header_2012new.js"></script>
+			<script type="text/javascript" src="//img1.2345.com/toolsimg/js/search_top2013_inner.js"></script>		<!-- header end -->
+		<!-- main -->
+		<div class="main">
+			<!--menu begin-->
+			<div class="menu_xy mt10">
+				<div class="menu_xy_inner">
+					<ul class="clearfix">
+						<li>
+							<a href="/rili.htm" target="_blank">
+								<span>万年历</span>
+							</a>
+						</li>
+						<li>
+							<a href="/jrhl.htm">
+								<span>今日黄历</span>
+							</a>
+						</li>
+						<li>
+							<a href="/laohuangli.htm" class="current">
+								<span>吉日查询</span>
+							</a>
+						</li>
+						<li>
+							<a href="/huangli.htm">
+								<span>吉时查询</span>
+							</a>
+						</li>
+						<li>
+							<a href="/jieqi.htm">
+								<span>24节气</span>
+							</a>
+						</li>
+						<li>
+							<a href="/huanglijieshi.htm">
+								<span>黄历名词解释</span>
+							</a>
+						</li>
+						<style>
+							.tg-hlxj span{
+								color: #F8F011;
+							}
+							.tg-hlxj:hover span{
+								color: #F8F011!important;
+								font-weight:bold!important;
+							}
+						</style>
+						<li class="tg-hlxj"><a href="javscript:;" class="tg-wnl-itm tg-wnl-trig"><span>详解老黄历</span>
+							<script src="/js/jquery-1.8.3.js"></script>
+<style>
+	.btn-wnl-tg{
+		width: 83px;
+		height: 24px;
+		line-height: 24px;
+		vertical-align: baseline;
+		text-align: center;
+		display: inline-block;
+		overflow: hidden;
+		color: #1895d8;
+		font-size: 14px;
+		font-weight: bold;
+		float: left;
+		margin-top: 1px;
+		background: url(../../images/rili/v2/sprite.png) no-repeat;
+		background-position: 0 -93px;
+	}
+	.btn-wnl-tg:hover{
+		background-position: 0 -67px;
+		text-decoration: none;
+		color: #fff;
+	}
+	.tg-wnl-itm {
+		position: relative;
+	}
+	.wnl-hover {
+		display: none;
+		position:absolute;
+		top:0;
+		left:0;
+		width:124px;
+		height:auto;
+		background-color:#ffffff;
+		border:1px solid #78c1ff;
+		z-index:999;
+	}
+	.wnl-hover p{
+		text-indent: 0;
+		text-align: center;
+		font-size:12px;
+	}
+	.wnl-hover-title{
+		padding-top:5px;
+		height:22px;
+	}
+	.wnl-hover-title p{
+		color:#333333;
+		line-height:22px;
+	}
+	.wnl-hover-qr{
+			border-top:1px dashed #cecece;
+			padding-top:6px;
+			padding-bottom:3px;
+			width:90px;
+			height:90px;
+			overflow:hidden;
+			margin:0 auto;
+			text-indent: 0!important;
+		}
+	.wnl-hover-qr img{
+		width:90px;
+		height:90px;
+		text-indent: 0;
+	}
+	.wnl-hover-tip{
+		padding:7px 0;
+	}
+	.wnl-hover-tip p{
+		color:#666666;
+		line-height: 18px!important;
+	}
+</style>
+<script>
+
+	var _wnlTools = {
+		wrapper : '',
+		tipTop : '',
+		tipLeft : '',
+		innerTip : '',
+		innerTip2:'',
+		borderColor : '',
+		static:'',
+		main:function(config){
+			this.wrapper = config.wrapper;
+			this.innerTip = config.innerTip;
+			this.borderColor = config.borderColor;
+			this.tipTop = config.tipTop;
+			this.tipLeft = config.tipLeft;
+			this.static = config.static;
+			this.innerTip2 = config.innerTip2?config.innerTip2:'';
+			this.handle();
+			this.hover();
+		},
+		handle:function(){
+			if(!this.wrapper){
+				$('._wnl-inner-tip').html(this.innerTip);
+				$('._wnl-inner-tip2').html(this.innerTip2);
+				$('.wnl-hover').css('border-color',this.borderColor);
+				$('.wnl-hover').css('top',this.tipTop);
+				$('.wnl-hover').css('left',this.tipLeft);
+			}
+			else{
+				var tar = $(this.wrapper).find('.wnl-hover');
+				tar.css('border-color',this.borderColor);
+				tar.css('top',this.tipTop);
+				tar.css('left',this.tipLeft);
+				tar.find('._wnl-inner-tip').html(this.innerTip);
+				tar.find('._wnl-inner-tip2').html(this.innerTip2);
+			}
+
+		},
+		hover:function(){
+			var that = this;
+			var _tarTgWnl = $('.tg-wnl-trig');
+			_tarTgWnl.hover(function(){
+				$(this).find('.wnl-hover').show();
+				that.count(that.static);
+			},function(){
+				$(this).find('.wnl-hover').hide();
+			})
+		},
+		count:function(word){
+			cc(word);
+		}
+	}
+</script>
+<div class="wnl-hover">
+	<div class="wnl-hover-title">
+		<p>扫码下载万年历APP</p>
+	</div>
+	<div class="wnl-hover-qr">
+		<img src="/images/tg-wnl-qrcode.png" alt="">
+	</div>
+	<div class="wnl-hover-tip">
+		<p class="_wnl-inner-tip"></p>
+		<p class="_wnl-inner-tip2"></p>
+	</div>
+</div>
+							<script>
+                                _wnlTools.main({
+                                    innerTip:'更多吉时吉日',
+                                    innerTip2:'黄历宜忌信息随心看',
+                                    borderColor:'#78c1ff',
+                                    tipTop:'33px',
+                                    tipLeft:'0px',
+									static:'详解老黄历'
+                                })
+							</script></a>
+						</li>
+					</ul> <strong><a href="/life.htm">生活服务</a></strong>
+				</div>
+			</div>
+			<!--menu end-->
+			<div class="mod_2b">
+				<h1>
+					<img src="//img1.2345.com/toolsimg/img/icon_laohuangli.png" />
+					黄道吉日查询
+				</h1>
+				<p class="description">为您提供权威可靠的黄道吉日查询，包括结婚吉日、搬家吉日、开业吉日等。</p>
+				<div class="life clearfix">
+					<div class="col_b">
+						<div class="data_search laohuangli_search">
+							<div class="headvon-wrap clearfix" style="width:680px;height:100%;overflow:hidden;margin:0 auto;">
+								<div class="lbox"> <strong class="fl">从</strong>
+									<div class="select_outer select_outer62">
+										<div class="select_inner">
+											<select id="s_year" onchange="Tools.changeMonthDay(0)">
+												<option value="2019" selected="selected">2019</option>
+												<option value="2020">2020</option>
+												<option value="2021">2021</option>
+												<option value="2022">2022</option>
+												<option value="2023">2023</option>
+												<option value="2024">2024</option>
+												<option value="2025">2025</option>
+												<option value="2026">2026</option>
+												<option value="2027">2027</option>
+												<option value="2028">2028</option>
+												<option value="2029">2029</option>
+												<option value="2030">2030</option>
+												<option value="2031">2031</option>
+												<option value="2032">2032</option>
+												<option value="2033">2033</option>
+												<option value="2034">2034</option>
+												<option value="2035">2035</option>
+											</select>
+										</div>
+									</div>
+									<span class="fl">年</span>
+									<div class="select_outer select_outer50">
+										<div class="select_inner">
+											<select id="s_month" onchange="Tools.changeMonthDay(0)">
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">6</option>
+												<option value="7">7</option>
+												<option value="8">8</option>
+												<option value="9">9</option>
+												<option value="10">10</option>
+												<option value="11">11</option>
+												<option value="12">12</option>
+											</select>
+										</div>
+									</div>
+									<span class="fl">月</span>
+									<div class="select_outer select_outer50">
+										<div class="select_inner">
+											<select  id="s_day"></select>
+										</div>
+									</div>
+									<span class="fl">日</span>
+									<div class="clear"></div>
+									<div class="mt15">
+										<strong class="fl">到</strong>
+										<div class="select_outer select_outer62">
+											<div class="select_inner">
+												<select id="e_year" onchange="Tools.changeMonthDay(1)">
+													<option value="2019" selected="selected">2019</option>
+													<option value="2020">2020</option>
+													<option value="2021">2021</option>
+													<option value="2022">2022</option>
+													<option value="2023">2023</option>
+													<option value="2024">2024</option>
+													<option value="2025">2025</option>
+													<option value="2026">2026</option>
+													<option value="2027">2027</option>
+													<option value="2028">2028</option>
+													<option value="2029">2029</option>
+													<option value="2030">2030</option>
+													<option value="2031">2031</option>
+													<option value="2032">2032</option>
+													<option value="2033">2033</option>
+													<option value="2034">2034</option>
+													<option value="2035">2035</option>
+												</select>
+											</div>
+										</div>
+										<span class="fl">年</span>
+										<div class="select_outer select_outer50">
+											<div class="select_inner">
+												<select id="e_month" onchange="Tools.changeMonthDay(1)">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+													<option value="11">11</option>
+													<option value="12">12</option>
+												</select>
+											</div>
+										</div>
+										<span class="fl">月</span>
+										<div class="select_outer select_outer50">
+											<div class="select_inner">
+												<select id="e_day"></select>
+											</div>
+										</div>
+										<span class="fl">日</span>
+									</div>
+								</div>
+								<div class="md fl"  style="zoom:1">
+									<input checked="" class="radio" id="lmanacLuck" name="lmanacType" type="radio" /><label for="lmanacLuck">宜</label><input class="radio" id="lmanacBad" name="lmanacType" type="radio" /><label for="lmanacBad">忌</label>
+									<div class="select_outer select_outer84">
+										<div class="select_inner">
+											<select id="lmanacCond">
+												<option value="嫁娶" selected="selected">嫁娶</option>
+												<option value="纳采">纳采</option>
+												<option value="纳婿">纳婿</option>
+												<option value="安床">安床</option>
+												<option value="会亲友">会亲友</option>
+												<option value="出行">出行</option>
+												<option value="扫舍">扫舍</option>
+												<option value="入学">入学</option>
+												<option value="理发">理发</option>
+												<option value="习艺">习艺</option>
+												<option value="伐木">伐木</option>
+												<option value="栽种">栽种</option>
+												<option value="求医">求医</option>
+												<option value="探病">探病</option>
+												<option value="针灸">针灸</option>
+												<option value="移徙">移徙</option>
+												<option value="开市">开市</option>
+												<option value="出货财">出货财</option>
+												<option value="赴任">赴任</option>
+												<option value="订盟">订盟</option>
+												<option value="纳财">纳财</option>
+												<option value="立券">立券</option>
+												<option value="交易">交易</option>
+												<option value="置产">置产</option>
+												<option value="入宅">入宅</option>
+												<option value="盖屋">盖屋</option>
+												<option value="开渠">开渠</option>
+												<option value="动土">动土</option>
+												<option value="作灶">作灶</option>
+												<option value="造仓">造仓</option>
+												<option value="作梁">作梁</option>
+												<option value="上梁">上梁</option>
+												<option value="补垣">补垣</option>
+												<option value="掘井">掘井</option>
+												<option value="祭祀">祭祀</option>
+												<option value="求嗣">求嗣</option>
+												<option value="开光">开光</option>
+												<option value="祈福">祈福</option>
+												<option value="入殓">入殓</option>
+												<option value="安葬">安葬</option>
+												<option value="安香">安香</option>
+												<option value="除服">除服</option>
+												<option value="修坟">修坟</option>
+												<option value="行丧">行丧</option>
+											</select>
+										</div>
+									</div><a class="selt_btn" onclick="Tools.insertJiRi();" id="query" href="javascript:;">查  询</a>
+								</div>
+							</div>
+<!-- 							<div class="list fl">
+								<a target="_blank" href="/laohuangli.htm?t=y&c=%u5AC1%u5A36&sy=2017&ey=2016&sm=1&em=12&sd=1&ed=31"> <i></i>
+									2017年 <em>结婚</em>
+									黄道吉日
+								</a>
+								<a target="_blank" href="/laohuangli.htm?t=y&c=%u6C42%u55E3&sy=2017&ey=2016&sm=1&em=12&sd=1&ed=31"> <i></i>
+									2017年 <em>求子</em>
+									黄道吉日
+								</a>
+								<a target="_blank" href="/laohuangli.htm?t=y&c=%u5F00%u5E02&sy=2017&ey=2016&sm=1&em=12&sd=1&ed=31">
+									<i></i>
+									2017年
+									<em>开业</em>
+									黄道吉日
+								</a>
+								<a target="_blank" href="/laohuangli.htm?t=y&c=%u79FB%u5F99&sy=2017&ey=2016&sm=1&em=12&sd=1&ed=31">
+									<i></i>
+									2017年
+									<em>搬家</em>
+									黄道吉日
+								</a>
+							</div> -->
+						</div>
+						<!-- 百度推广 begin-->
+                        <div class="mt10">
+                            <script type="text/javascript">
+                                /*实用查询PC 今日黄历吉日吉时第一条标签云 创建于 2017/11/8*/
+                                var cpro_id = "u3130920";
+                            </script>
+                            <script type="text/javascript" src="//cpro.baidustatic.com/cpro/ui/c.js"></script>
+                        </div>
+                        <!-- 百度热词 end -->
+						<div class="data_result mt10" id="search_result" style="">
+							<div id="result_header"></div>
+							<div id="result_content">
+								<div class="total_load" style="display:none">
+									正在加载，请稍候...
+									<img src="//img1.2345.com/toolsimg/img/load.gif" />
+								</div>
+							</div>
+						</div>
+						<div class="data_result" id="1" name="1">
+							<table class="data_table mt10">
+								<thead>
+									<tr>
+										<th>
+											<div class="thead_th thead_th_deep"  id="jiritext" name="jiritext">
+												<div class="thead_th_rt"></div>
+												<div class="thead_th_lt"></div>
+												<strong>择吉日宜忌简便方法</strong>
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<div class="method_tips">
+												<p>
+													选择吉日用事应该 以事为经以神为纬，以神为目以事为纲。黄历之中白虎，天刑，朱雀，天牢，玄武，勾陈--为六黑道凶日；黄历之中青龙，天德，玉堂，司命，明堂，金匮--为六黄道吉日。黄历之中除日、危日、定日、执日、成日、开日为吉；黄历之中建日、满日、平日、破日、收日、闭日为凶。以下乃以事择日简明对照表，希望能为您选择黄道吉日提供方便。
+												</p>
+												<h3>
+													<i></i>
+													嫁娶结婚择吉日
+												</h3>
+												<p>嫁娶结婚择日宜：天德、月德、天德合、月德合、天赦、天愿、三合、天喜、六合、不将日。</p>
+												<p>
+													嫁娶结婚择日忌：月破、平日、收日、闭日、劫煞、灾煞、月煞、月刑、月厌、五墓、月害、大时、天吏、四废、四忌、四穷、五离、八专、厌对、亥日、往亡。
+												</p>
+												<h3>
+													<i></i>
+													祈福择日
+												</h3>
+												<p>祈福择日宜：天德、月德、天德合、月德合、天赦、天愿、月恩、四相、时德、天巫、开 日、普护、福生、圣心、益后、续世日。</p>
+												<p>祈福择日忌：月建、月破、平日、收日、劫煞、月煞、月刑、月害、月厌、大时、游祸、天吏、四废日。（又忌禄空、上朔等日。）</p>
+												<h3>
+													<i></i>
+													开市、新张、开业择日
+												</h3>
+												<p>开市择日宜：天愿、民日、满日、成日、开日、五富日。</p>
+												<p>开市择日忌：月破、平日、收日、劫煞、灾煞、月煞、月刑、月厌、五墓、大时、天吏、小耗、天贼、四耗、四穷、五离、四废、九空。</p>
+												<h3>
+													<i></i>
+													求嗣(祈求生男生女)择日
+												</h3>
+												<p>求嗣择日宜：天德、月德、天德合、月德合、天赦、天愿、月恩、四相、时德、开日、益后、续世日。</p>
+												<p>求嗣择日忌：月建、月破、平日、收日、劫煞、灾煞、月煞、月刑、月害、月厌、大时、游祸、天吏、四废日。</p>
+												<h3>
+													<i></i>
+													宴会择日
+												</h3>
+												<p>宴会择日宜：天德、月德、天德合、月德合、天赦、天愿、月恩、四相、时德、王日、福德、三合、开日、天喜、民日、六合、五合日。</p>
+												<p>宴会择日忌：月破、平日、收日、闭日、月害、劫煞、灾煞、月煞、月刑、月厌、五离、酉日、四废日。</p>
+												<h3>
+													<i></i>
+													祭祀择日
+												</h3>
+												<p>祭祀择日宜：天德、月德、天德合、月德合、天赦、天愿、月恩、四相、时德、天巫、开日、普护、福生、圣心、益后、续世日。</p>
+												<p>祭祀择日忌：天狗寅日。</p>
+												<h3>
+													<i></i>
+													立券交易择日
+												</h3>
+												<p>立券交易择日宜：天愿、民日、满日、成日、开日、五富、五合、六合日。</p>
+												<p>
+													立券交易择日忌：月破、平日、收日、劫煞、灾煞、月煞、月刑、月厌、五墓、大时、天吏、小耗、天贼、四耗、四穷、五离、四废、九空。
+												</p>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="tip" id="tip" style="display:none; ">
+							<div class="tip_box">
+								<div class="tip_top"></div>
+								<div class="tip_content" id="huangli_content"></div>
+								<div class="tip_btm"></div>
+							</div>
+						</div>
+
+					</div>
+                    <!-- 百度推广 begin-->
+                    <div style="margin:10px 0 0 -8px;">
+                        <script type="text/javascript">
+                            /*实用查询PC 今日黄历/吉日查询/24节气 页面底部原生图文 890*100 创建于 2017/5/16*/
+                            var cpro_id = "u2981278";
+                        </script>
+                        <script type="text/javascript" src="//cpro.baidustatic.com/cpro/ui/c.js"></script>
+                    </div>
+                    <!-- 百度热词 end -->
+				</div>
+			</div>
+            <!-- life channel cooperation at 2018-11-28 16:28:42 -->
+<a onclick="cc('tools_life_yxf')" href="https://www.77tianqi.com/sm/bzhh/index.html?from=dhpc_hlcb" id="rFixAd" target="_blank" style="position:fixed;right:50%;bottom:240px;margin-right: -660px;">
+    <img src="//img1.2345.com/toolsimg/images/suanming/sc5.gif" style="width:150px;height:auto;">
+</a>
+<script>
+    (function () {
+        var rAd = document.getElementById('rFixAd');
+        if (window.innerWidth <= 1322) {
+            rAd.style.display = 'none';
+        }
+    })();
+</script>
+<!-- life channel cooperation at 2018-11-28 16:28:42 -->
+		</div>
+				<!-- main end -->
+				<!-- footer -->
+				<script type="text/javascript" src="//img1.2345.com/toolsimg/js/jquery-1.12.4.js"></script>
+				<script type="text/javascript" language="javascript" src="//img1.2345.com/toolsimg/js/common.js"></script>
+				<script type="text/javascript" language="javascript" src="//img1.2345.com/toolsimg/js/huanglitools.js"></script>
+				<script type="text/javascript" src="//img1.2345.com/toolsimg/js/huangli.js"></script>
+				<script src="//img1.2345.com/toolsimg/js/footer201307.js" type="text/javascript"></script>
+				<script>
+					init('jiri');
+				</script>
+
+				<!-- footer end -->
+	</div>
+</body>
+	</html>

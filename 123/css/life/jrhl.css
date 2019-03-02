@@ -1,0 +1,122 @@
+@charset "gb2312";
+.Csprites, .data_table .luck_th, .data_table .bad_th, .data_table .nowell_th, .data_table .goblin_th { background-image: url(../../images/life/laohuangli_sprites.png?12100); background-repeat: no-repeat; }
+
+.Csprites_btn, .data_search .selt_btn { background-image: url(../../images/life/laohuangli_sprites_btn.png?1207); background-repeat: no-repeat; }
+
+.fl { float: left; }
+
+.mt15 { margin-top: 15px; }
+
+select { border: none; }
+
+.checkbox, .radio { width: 16px; height: 16px; line-height: 16px; margin: -1px 3px 0 0; display: inline-block; vertical-align: middle; }
+
+.wp866 { width: 866px; margin: 0 auto; }
+
+/* select_outer */
+.select_outer { padding: 3px 2px 4px; border: 2px solid #ffa73e; background: white; float: left; display: inline; margin: -3px 8px 0 8px; vertical-align: middle; position: relative; }
+.select_outer select { display: block;height:20px;+height:auto;margin: -1px 0 0 -1px; +margin:-2px;padding:1px;font-size: 14px; border:1px solid white;line-height: 20px; overflow: hidden; outline: none; color: #333333; }
+
+.select_outer62 { width: 64px; }
+.select_outer62 select { width: 66px;+width:68px; }
+
+.select_outer50 { width: 52px; }
+.select_outer50 select { width: 54px; +width:56px;}
+
+.select_outer84 { width: 86px; float: none; display: inline-block; *display: inline; *zoom: 1; }
+.select_outer84 select { width: 88px;+width:90px; }
+
+.select_inner { width: 100%; height: 18px; line-height: 18px; overflow: hidden; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) { .select_outer select { line-height: 16px; } }
+/* data_table */
+.data_table { width: 100%; width: 100%; border-collapse: collapse; border-spacing: 0; font-size: 14px; color: #666666; border: 1px solid #c5967c; }
+.data_table th, .data_table td { border: 1px solid #c5967c; }
+.data_table tbody th, .data_table tbody td { background-color: #fffbf3; }
+.data_table tbody th { color: #8a4626; }
+.data_table tfoot th, .data_table tfoot td { border-top: none; }
+.data_table .thead_th, .data_table .thead_th_lt, .data_table .thead_th_rt { background-image: url("../../images/life/laohuangli_sprites.png?1207"); }
+.data_table .thead_th { background-repeat: repeat-x; overflow: hidden; zoom: 1; text-align: center; position: relative; }
+.data_table .thead_th strong { font-size: 14px; font-weight: bold; color: white; }
+.data_table .thead_th_lt { float: left; height: 30px; background-repeat: no-repeat; width: 25px; }
+.data_table .thead_th_rt { float: right; height: 30px; background-repeat: no-repeat; width: 25px; }
+.data_table .thead_th_deep { background-position: 0 -50px; line-height: 30px; }
+.data_table .thead_th_deep .thead_th_lt { background-position: 0 0; }
+.data_table .thead_th_deep .thead_th_rt { background-position: 100% -100px; }
+.data_table .thead_th_light { background-position: 0 -200px; line-height: 30px; }
+.data_table .thead_th_light .thead_th_lt { background-position: 0 -150px; }
+.data_table .thead_th_light .thead_th_rt { background-position: 100% -250px; }
+.data_table .thead_th_light strong { color: #8a4626; }
+.data_table .astro { color: #006f9f; text-decoration: underline; margin-left: 36px; }
+.data_table .astro:hover { color: #fd5151; }
+.data_table .god_child, .data_table .god_money, .data_table .god_happy, .data_table .god_luck { _padding-top: 8px; _height: 30px; }
+.data_table .god_child i, .data_table .god_money i, .data_table .god_happy i, .data_table .god_luck i { display: inline-block; width: 20px; height: 20px; background: url(../../images/life/laohuangli_sprites.png) no-repeat; vertical-align: -5px; margin-right: 5px; *vertical-align: 0; }
+.data_table .god_child i { background-position: 0 -450px; }
+.data_table .god_money i { background-position: 0 -475px; }
+.data_table .god_happy i { background-position: 0 -498px; }
+.data_table .god_luck i { background-position: 0 -525px; }
+.data_table tbody th, .data_table tbody td { height: 38px; vertical-align: middle; }
+.data_table tbody td { padding-left: 16px; padding-right: 16px; }
+.data_table .c_deep { color: #333333; font-weight: bold; }
+.data_table .c_light { color: #ff7200; font-weight: bold; }
+.data_table .bg_deep { background-color: #bbbbbb; }
+.data_table .bg_light { background-color: #ffcc94; }
+.data_table .tday_luck_time { position: absolute; right: 35px; top: 4px; width: 70px; height: 21px; line-height: 21px; font-weight: normal; color: white; text-align: center; display: block; background-position: 0 -650px; font-size: 12px; }
+.data_table .tday_luck_time:hover { text-decoration: underline; }
+.data_table .td_thour { text-align: center; }
+.data_table .tday_time_s { font-weight: bold; text-align: center; color: #8a4626; }
+.data_table .tday_time_s:hover { color: #fd5151; }
+.data_table .slide_up, .data_table .slide_dn { position: absolute; right: 22px; top: 1px; width: 29px; height: 29px; }
+.data_table .slide_up { background-position: 0 -550px; }
+.data_table .slide_up:hover { background-position: -50px -550px; }
+.data_table .slide_dn { background-position: 0 -600px; }
+.data_table .slide_dn:hover { background-position: -50px -600px; }
+.data_table .luck_th, .data_table .bad_th, .data_table .nowell_th { width: 28px; height: 26px; margin: 0 auto; }
+.data_table .luck_th { background-position: 0 -300px; }
+.data_table .bad_th { background-position: 0 -350px; }
+.data_table .nowell_th { background-position: 0 -400px; }
+.data_table .luck_td em, .data_table .bad_td em, .data_table .nowell_td em { font-weight: bold; line-height: 24px; }
+.data_table .luck_td { color: #64aa0b; }
+.data_table .bad_td { color: #ea2020; }
+.data_table .nowell_td { color: #1060e2; }
+.data_table dl { width: 100%; height: 38px; line-height: 38px; overflow: hidden; background-color: #fffbf3; }
+.data_table dt, .data_table dd { float: left; height: 38px; }
+.data_table dt { text-align: center; width: 80px; color: #8a4626; font-weight: bold; }
+.data_table dd { width: 190px; padding-left: 16px; border: solid #c5967c; border-width: 0 1px; }
+.data_table dd.last { border-right-width: 0; }
+
+
+/* data_search */
+.data_search { border: 1px solid #c5967c; font-size: 14px; vertical-align: middle; }
+.data_search .lbox { float: left; }
+.data_search .lbox strong { font-weight: bold; color: #333333; }
+.data_search .selt_btn { width: 129px; height: 40px; line-height: 9999px; margin-top: -3px; overflow: hidden; background-position: 0 0; cursor: pointer; vertical-align: middle; display: inline-block; *display: inline; *zoom: 1; position: relative; }
+.data_search .selt_btn:hover { background-position: -150px 0; text-decoration: none; }
+
+.huangli_search { background: url(../../images/life/search_huangli.png) no-repeat; width: 864px; height: 109px; }
+.huangli_search .lbox { padding: 46px 50px 0 180px; width: 350px; }
+.huangli_search .md { padding-top: 42px; }
+
+/* data_result */
+.data_result .data_table { color: #666666; }
+.data_result .data_table tbody th, .data_result .data_table tbody td { height: 30px; vertical-align: middle; text-align: center; }
+.data_result .data_table tbody th { font-weight: bold; background-color: #fff2ce; font-size: 12px; }
+.data_result .data_table tbody td { font-size: 14px; }
+.data_result .data_table .tp_1st { width: 48px; height: 28px; }
+.data_result .data_table .tp_oth { width: 66px; height: 28px; }
+.data_result .data_table .moment { text-align: left; padding-left: 12px; padding-right: 10px; word-break: break-all; }
+.data_result .data_table .c_deep { color: #333333; font-weight: bold; }
+.data_result .data_table .c_light { color: #ff7200; font-weight: bold; }
+.data_result .data_table .bg_deep { background-color: #d0d0d0; }
+.data_result .data_table .bg_light { background-color: #ffcc94; }
+.data_result .data_table .fz12 { font-size: 12px; }
+
+/* tip */
+.tip .tip_top, .tip .tip_btm { background: url(../../images/life/laohuangli_bg.png) no-repeat; }
+
+.tip { position: absolute; }
+.tip .tip_box { position: relative; width: 134px; }
+.tip .tip_top { width: 132px; height: 6px; overflow: hidden; background-position: 0 -133px; }
+.tip .tip_content { padding: 5px 10px; width: 110px; line-height: 20px; color: #666666; border: 1px solid #f7bf90; border-width: 0 1px; background-color: #fef9e7; }
+.tip .tip_btm { width: 132px; height: 2px; overflow: hidden; background-position: 0 -140px; }
+

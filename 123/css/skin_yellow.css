@@ -1,0 +1,22 @@
+/* green laonian */
+html{ background-color:#fffbf2; background-image:url(../images/bdbg_yellow.gif);}
+body{ background-image:url(../images/top_bg_yellow.jpg);}
+.top_w{ background-position:0 -241px; }
+.top b em .pop_d, .top b em .color_d, .form_login{ border-color:#cdad89;}
+.top b em .pop_d li a:hover{ background:#e89b40;}
+.fblue,.fblue a,a.fblue{ color:#aa610b;}
+.top_w,.top b em.pop a,.sch_bar ul li a:hover,.sch_bar ul li a.curr,.sch_box,.box h2,.box h5,.box h2 span,.box h5 span,.help h3,.help h3 span.tit_right{ background-image:url(../images/bg_yellow.gif);}
+.box_cnt{ border-color:#d7ae54;}
+.box_cnt_in{ border-color:#fff9eb;}
+.sort dl.bgline{ background:#fffaed;}
+.sort dl dt a{ color:#aa610b;}
+.sort dl a:hover{ background:#e89b40;}
+.help h3{ color:#fff;}
+.help ul li a{ color:#aa610b;}
+.head{ border-color:#e5c06d;}
+.nav li a{ background-image:url(../images/tool_yellow.gif)}
+#sug table,#sug2 table{ border-color:#c4b89d;}
+.ml td{ background:#fffbf1;}
+.mo td{ background:#e89b40}
+.sort .mzlist dl.lastmz{ border-color:#ead6d6;}
+.sort .mzlist{ border-color:#f3eeea;}

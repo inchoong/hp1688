@@ -1,0 +1,16 @@
+td.city,td.set{ text-align:center;}
+td.city a{ text-decoration:none;font-family:"ºÚÌå"; font-size:18px;}
+td.set a{color:#959595; font-size:14px;text-decoration:underline;}
+a:hover,td.city a:hover, td.set a:hover{color:#f00;}
+.weatherr a h1,.weatherr a h2,.weatherr a h3{color:black;text-decoration:none}
+.weatherr a:hover h1,.weatherr a:hover h2,.weatherr a:hover h3{color:red;text-decoration:underline;}
+.weatherr{height:68px;width:100%}
+.weatherr a{cursor:pointer;display:block;font-size:12px; text-decoration:none;}
+.weatherr div{font-weight:normal;}
+.weatherr h1,.weatherr h2,.weatherr h3{ width:40%;text-align:center;font-size:14px; font-weight:100; float:right; padding-left:30px; }
+.weatherr h1{padding-top:1px;height:25px;line-height:25px; position:relative; }
+.weatherr img{height:45px;width:55px;position:absolute; top:12px; left:0;}
+
+
+
+

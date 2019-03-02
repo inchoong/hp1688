@@ -1,0 +1,115 @@
+﻿
+<!doctype html>
+<html>
+<head>
+    <meta charset="gb2312">
+    <title>北京时间_标准时间校对-2345实用查询</title>
+    <meta name="keywords" content="2345实用查询-北京时间校对">
+    <meta name="description" content="2345实用查询-北京时间校对">
+  <meta name="mobile-agent" content="format=html5;url=http://tools.2345.com/m/timebj/" />
+  <script type="text/javascript" src="js/m/ua.js"></script>    
+    <link href="css/public_v2.css" rel="stylesheet" type="text/css">
+    <link href="css/timebj/timebj.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jExt.1.0.js"></script>
+    <script type="text/javascript" src="js/m/ua.js"></script> 
+    <script type='text/javascript'>
+function set(time){
+    var week = '日一二三四五六';
+    var beijingTimeZone = 8;
+    var timeOffset = ((-1 * (new Date()).getTimezoneOffset()) - (beijingTimeZone * 60)) * 60000;
+    var now = new Date(time - timeOffset);
+    document.getElementById('beijing_time').innerHTML = p(now.getHours())+':'+p(now.getMinutes())+':'+p(now.getSeconds());
+    document.getElementById('date_time').innerHTML = p(now.getFullYear())+'年'+p(now.getMonth()+1)+'月'+p(now.getDate())+'日 周'+p(week.charAt(now.getDay()));
+    var now = new Date();
+    document.getElementById('local_time').innerHTML = p(now.getHours())+':'+p(now.getMinutes())+':'+p(now.getSeconds())+'  　'+p(now.getFullYear())+'年'+p(now.getMonth()+1)+'月'+p(now.getDate())+'日 周'+p(week.charAt(now.getDay()));
+
+}
+function p(s) {
+  return s < 10 ? '0' + s : s;
+}
+var time = '1551495258000';
+window.onload = function(){
+setInterval(function() {
+          set(time);
+          time = Number(time);
+          time += 1000;
+        },1000);
+}
+</script>
+</head>
+<body>
+    <!-- <script>
+  /*实用查询子页面顶部悬浮搜索推荐 创建于 2015-06-17*/
+  var cpro_id = "u2161153";
+</script>
+<script src="http://su.bdimg.com/static/dspui/js/uf.js" type="text/javascript"></script> -->    <div class="wrapper">
+        <!-- top -->
+        <script type="text/javascript" src="js/header_2012new.js"></script>
+        <!-- top end -->
+        <!-- header -->
+        <script type="text/javascript" src="js/search_top2013_inner.js"></script>
+        <!-- header end -->
+        <!-- main -->
+        <div class="main">
+            <!--menu begin-->
+            <div class="menu_xy mt10">
+                <div class="menu_xy_inner">
+                    <ul class="clearfix">
+                        <li><a href="rili.html" target="_blank"><span>万年历</span></a></li>
+                        <li><a href="his1.html"><span>历史上的今天</span></a></li>
+                        <li><a href="jieri.html"><span>2016节日大全</span></a></li>
+                        <li><a href="timebj.html" class="current"><span>北京时间</span></a></li>
+                    </ul> <strong><a href="life.html">生活服务</a></strong> 
+                </div>
+            </div>
+            <!--menu end-->
+
+            <div class="mod_2b">
+                <div class="grid_a wp868">
+                    <div class="mod_timec">
+                        <h2><img src="images/icon_datecity.png" />北京时间校对</h2>
+                        <p class="description">为您提供标准的北京时间，与中国科学院国家授时中心对时校对同步，每3秒同步一次。</p>
+                        <p class="mtc_time"> 
+                            <strong id="beijing_time"></strong>
+                            <span id="date_time" style="color:red;"></span>
+                            <br />
+                            <br />
+                            您的本地电脑时间：
+                            <span id="local_time"></span>
+                        </p>
+                        <div class="tip_box">
+                            <span class="t">调整电脑时间的方法：</span>
+                            <p>
+                                双击电脑右下角时间，打开“时间和日期属性”设置窗口，直接调整输入正确的时间即可；或者在“时间和日期属性”设置窗口，点击“Internet时间”标签，点击“立即更新按钮”，并在自动与internet时间服务器同步前面打钩。
+                            </p>
+                        </div>
+                        <p class="mtc_links">
+                            <a href="huangli.html" target="_blank">吉日查询</a>
+                            <a href="laohuangli.html" target="_blank">吉时查询</a>
+                            <a href="jieqi.html" target="_blank">24节气</a>
+                            <a href="tscx.html" target="_blank">天数计算器</a>
+                            <a href="yyl/" target="_blank">阴阳历转换</a>
+                            <a href="http://tianqi.2345.com/indexs.html" target="_blank">天气预报</a>
+                            <a href="http://www.tianqi.com/shengqishijian/" target="_blank">升降旗时间</a>
+                        </p>
+                    </div>
+                    <script type='text/javascript'>set(time);</script>
+                </div>
+            </div>
+            <!-- 百度推广 begin-->
+            <div style="margin-top:10px;">
+              <script type="text/javascript">
+                  /*实用查询PC万年历 底部988*100 创建于 2015-07-08*/
+                  var cpro_id = "u2195219";
+              </script>
+              <script type="text/javascript" src="//cpro.baidustatic.com/cpro/ui/c.js"></script>
+            </div>
+            <!-- 百度热词 end -->
+        </div>
+        <!-- main end -->
+        <!--footer start-->
+        <script type="text/javascript" src="js/footer201307.js"></script>
+        <!--footer end--> 
+    </div>
+</body>
+</html>

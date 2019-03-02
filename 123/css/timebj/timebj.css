@@ -1,0 +1,30 @@
+@charset "gb2312";
+/*
+ * Created: 20120807
+ * Author : leony
+ */
+.menu_xy strong{background:url(../../images/timebj/dateicon.gif) no-repeat 0 1px;}
+/*grid_a*/
+.grid_a{padding:0px 40px 25px 40px;}
+
+
+/*=time check*/
+.mod_timec{ font-size:14px; }
+.mod_timec a{ color:#666; }
+.mod_timec a:hover{ color:#FD5151; }
+/********/
+.mod_timec h4{ margin:0 auto; padding:0 0 0 45px; width:212px; height:42px; line-height:42px; color:#338BCF; font-size:34px; font-family:\5FAE\8F6F\96C5\9ED1,\9ED1\4F53,\5B8B\4F53; background:url(../../images/timebj/datecity.gif) no-repeat 0 4px; }
+.mtc_time{ margin:0 auto; padding:10px 0 20px; color:#333; line-height:1.4; font-family:Arial; }
+.mtc_time strong{ display:block; font-size:80px; font-weight:400; }
+.mtc_links{ margin:0 auto; width:800px; }
+.mtc_links a{ padding:0 16px; }
+/********/
+.life_ser{ display:block; width:72px; height:36px; line-height:36px; font-size:14px; font-weight:700; color:#fff; padding-left:24px; background:url(../../images/timebj/dateicon.gif) no-repeat 0 center; position:absolute; right:0; top:0; }
+/********/
+.grid_a{ background:url(../../images/timebj/bg.png) no-repeat right bottom; text-align:center;}
+/*tip_box*/
+.tip_box{margin:0 auto 25px;width:464px;padding:7px 45px;border:1px solid #A2CDEA;font-size:12px;text-align:left;background:#fcfeff url(../../images/timebj/i_tip.png) no-repeat 25px 9px;line-height:20px;}
+.tip_box .t{color:#348bcf;}
+.tip_box p{margin-top:2px;color:#666666;}
+
+

@@ -1,0 +1,44 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="gb2312">
+    <title>北京时间_标准时间校对-2345实用查询</title>
+
+ <script type='text/javascript'>
+function set(time){
+    var week = '日一二三四五六';
+    var beijingTimeZone = 8;
+    var timeOffset = ((-1 * (new Date()).getTimezoneOffset()) - (beijingTimeZone * 60)) * 60000;
+    var now = new Date(time - timeOffset);
+    document.getElementById('beijing_time').innerHTML = p(now.getHours())+':'+p(now.getMinutes())+':'+p(now.getSeconds());
+    document.getElementById('date_time').innerHTML = p(now.getFullYear())+'年'+p(now.getMonth()+1)+'月'+p(now.getDate())+'日 周'+p(week.charAt(now.getDay()));
+    var now = new Date();
+    document.getElementById('local_time').innerHTML = p(now.getHours())+':'+p(now.getMinutes())+':'+p(now.getSeconds())+'  　'+p(now.getFullYear())+'年'+p(now.getMonth()+1)+'月'+p(now.getDate())+'日 周'+p(week.charAt(now.getDay()));
+
+}
+function p(s) {
+  return s < 10 ? '0' + s : s;
+}
+var time = '1551495258000';
+window.onload = function(){
+setInterval(function() {
+          set(time);
+          time = Number(time);
+          time += 1000;
+        },1000);
+}
+</script>
+</head>
+<body>
+
+  <p class="mtc_time"> 
+                            <strong id="beijing_time"></strong>
+                            <span id="date_time" style="color:red;"></span>
+                            <br />
+                            
+                            <!--您的本地电脑时间：
+                            <span id="local_time"></span> -->
+                        </p>
+
+</body>
+</html>
